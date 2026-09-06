@@ -569,9 +569,9 @@ class App {
             "conjuntos": "🩳👕", 
             "tazas": "🍵", 
             "banderas": "🚩", 
-            "cazacas": "🧥"
-            "buzo": "👖"
-            "CajaRegalo": "📦⭐🩵"
+            "cazacas": "🧥",
+            "buzo": "👖",
+            "CajaRegalo": "📦⭐🩵",
         };
         return map[cat] || "🏷️";
     }
