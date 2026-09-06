@@ -1455,7 +1455,7 @@ h1, h2, h3, h4, h5, h6 {
     
     /* 1. Banner Delgado en Celular */
     .hero-carousel {
-        height: 180px; 
+        height: 300px; 
     }
     .hero-content { margin-left: 5%; padding: 10px; }
     .hero-title { font-size: 28px; margin-bottom: 10px; }
