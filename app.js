@@ -28,7 +28,7 @@ import {
 class App {
     constructor() {
         this.products = [];
-        this.cart = JSON.parse(localStorage.getItem("GloriosaCervecera_cart")) || [];
+        this.cart = JSON.parse(localStorage.getItem("polakoshop_cart")) || [];
         this.favorites = [];
         this.currentUser = null;
         this.isAdmin = false;
