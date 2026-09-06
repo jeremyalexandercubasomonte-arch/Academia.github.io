@@ -57,7 +57,7 @@ class App {
             if (user) {
                 this.currentUser = user;
                 const profile = await getUserProfile(user.uid);
-                this.isAdmin = (profile && profile.role === "admin") || user.email === "lagloriosacervesera.91@gmail.com";
+                this.isAdmin = (profile && profile.role === "admin") || user.email === "lagloriosacervecera.91@gmail.com";
                 
                 // Cargar favoritos del usuario de Firebase
                 this.favorites = await getUserFavorites(user.uid);
