@@ -1329,7 +1329,6 @@ h1, h2, h3, h4, h5, h6 {
 .empty-state p { color: var(--text-muted); font-size: 15px; margin-bottom: 35px; }
 
 .hidden { display: none !important; }
-
 /* ==========================================================================
    FOOTER GENERAL
    ========================================================================== */
@@ -1345,8 +1344,8 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1.5fr;
-    gap: 60px;
+    grid-template-columns: 1.2fr 0.8fr 1fr 1.2fr; /* 4 COLUMNAS ACTIVAS */
+    gap: 40px;
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -1364,7 +1363,37 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.8;
 }
 
-.footer-links h4, .footer-contact h4 {
+/* Redes Sociales */
+.footer-socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #AAAAAA;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: var(--transition-premium);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.social-icon:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-4px);
+    border-color: var(--primary);
+    box-shadow: 0 8px 20px rgba(40, 125, 134, 0.4);
+}
+
+/* Enlaces y Textos */
+.footer-links h4, .footer-contact h4, .footer-map h4 {
     color: var(--white);
     font-size: 15px;
     text-transform: uppercase;
@@ -1387,13 +1416,26 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-.footer-links a:hover { color: var(--primary-light); padding-left: 5px; }
+.footer-links a:hover { 
+    color: var(--primary-light); 
+    padding-left: 5px; 
+}
 
 .footer-contact p {
     font-size: 14px;
     color: #AAAAAA;
     line-height: 1.8;
     margin-bottom: 15px;
+}
+
+/* Mapa */
+.map-wrapper {
+    width: 100%;
+    height: 180px; 
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255,255,255,0.02);
 }
 
 .footer-bottom {
@@ -1511,69 +1553,6 @@ h1, h2, h3, h4, h5, h6 {
     .cart-item-actions { align-items: center; text-align: center; gap: 15px; }
 }
 
-.footer-grid {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    /* Cambiamos de 3 a 4 columnas con tamaños proporcionales */
-    grid-template-columns: 1.2fr 0.8fr 1fr 1.2fr;
-    gap: 40px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-
-/* =========================================
-   NUEVOS ESTILOS: REDES SOCIALES Y MAPA
-========================================= */
-
-/* Redes Sociales */
-.footer-socials {
-    display: flex;
-    gap: 12px;
-    margin-top: 25px;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    background-color: rgba(255, 255, 255, 0.05);
-    color: #AAAAAA;
-    border-radius: 50%;
-    font-size: 18px;
-    transition: var(--transition-premium);
-    border: 1px solid rgba(255,255,255,0.05);
-}
-
-.social-icon:hover {
-    background-color: var(--primary);
-    color: var(--white);
-    transform: translateY(-4px);
-    border-color: var(--primary);
-    box-shadow: 0 8px 20px rgba(40, 125, 134, 0.4); /* Reflejo del color primary */
-}
-
-/* Mapa en el Footer */
-.footer-map h4 {
-    color: var(--white);
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 1px;
-    margin-bottom: 25px;
-}
-
-.map-wrapper {
-    width: 100%;
-    height: 180px; 
-    border-radius: var(--border-radius); /* Mantiene tu estilo de bordes redondeados (16px) */
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(255,255,255,0.02);
-}
 
 
 
