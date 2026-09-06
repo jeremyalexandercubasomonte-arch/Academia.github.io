@@ -571,7 +571,7 @@ class App {
             "banderas": "🚩", 
             "cazacas": "🧥",
             "buzo": "👖",
-            "CajaRegalo": "📦⭐🩵",
+            "CajaRegalo": "📦⭐",
         };
         return map[cat] || "🏷️";
     }
