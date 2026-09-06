@@ -566,7 +566,7 @@ class App {
             "camisetas": "👕", 
             "poleras": "🥼", 
             "shord": "🩳", 
-            "conjuntos": "🩳👕", 
+            "conjuntos": "👕🩳", 
             "tazas": "🍵", 
             "banderas": "🚩", 
             "cazacas": "🧥",
