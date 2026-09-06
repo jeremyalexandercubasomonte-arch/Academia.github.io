@@ -56,7 +56,7 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 
 // ID del administrador maestro (se almacena como campo en Firestore o UID definido)
-const ADMIN_EMAIL = "cubasjeremy06@gmail.com";
+const ADMIN_EMAIL = "lagloriosacervecera.91@gmail.com";
 /* ==========================================================================
    MÓDULO: AUTENTICACIÓN
    ========================================================================== */
