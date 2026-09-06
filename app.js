@@ -729,7 +729,7 @@ class App {
             }
             this.renderFavorites();
         } catch (err) {
-            this.showToast("No se pudo completar la acción de favoritos.");
+            this.showToast("No se pudo completar la acción de favoritoss.");
         }
     }
 
