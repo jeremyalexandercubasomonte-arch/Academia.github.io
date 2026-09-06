@@ -563,13 +563,15 @@ class App {
 
     getCategoryEmoji(cat) {
         const map = {
-            "Bebidas": "🥤", 
-            "Snacks": "🥓", 
-            "Helados": "🍦", 
-            "Sopas": "🍜", 
-            "BebidasAlcohol": "🍾", 
-            "Extras": "➕✨", 
-            "Golosinas": "🍭"
+            "camisetas": "👕", 
+            "poleras": "🥼", 
+            "shord": "🩳", 
+            "conjuntos": "🩳👕", 
+            "tazas": "🍵", 
+            "banderas": "🚩", 
+            "cazacas": "🧥"
+            "buzo": "👖"
+            "CajaRegalo": "📦⭐🩵"
         };
         return map[cat] || "🏷️";
     }
