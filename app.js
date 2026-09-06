@@ -685,7 +685,7 @@ class App {
             const orderId = await createOrderInDb(this.currentUser ? this.currentUser.uid : null, this.cart, total);
 
             // Generar contenido exclusivo del mensaje de WhatsApp (sin precios en la lista de ítems)
-            let msg = `Hola ShanaWok.\nQuiero realizar la compra de los siguientes productos:\n`;
+            let msg = `Hola GloriosaCervecera.\nQuiero realizar la compra de los siguientes productos:\n`;
             this.cart.forEach(item => {
                 msg += `• ${item.quantity}x ${item.name}\n`;
             });
@@ -698,7 +698,7 @@ class App {
             this.updateCartUI();
 
             // Abrir API de WhatsApp redireccionando al número maestro
-            window.open(`https://api.whatsapp.com/send?phone=51918822590&text=${encoded}`, "_blank");
+            window.open(`https://api.whatsapp.com/send?phone=51992316295&text=${encoded}`, "_blank");
             this.showToast("Pedido registrado. Redireccionando a WhatsApp...");
 
         } catch (err) {
