@@ -28,7 +28,7 @@ import {
 class App {
     constructor() {
         this.products = [];
-        this.cart = JSON.parse(localStorage.getItem("polakoshop_cart")) || [];
+        this.cart = JSON.parse(localStorage.getItem("GloriosaCervecera_cart")) || [];
         this.favorites = [];
         this.currentUser = null;
         this.isAdmin = false;
@@ -57,7 +57,7 @@ class App {
             if (user) {
                 this.currentUser = user;
                 const profile = await getUserProfile(user.uid);
-                this.isAdmin = (profile && profile.role === "admin") || user.email === "jeremyalexandercubasomonte@gmail.com";
+                this.isAdmin = (profile && profile.role === "admin") || user.email === "lagloriosacervesera.91@gmail.com";
                 
                 // Cargar favoritos del usuario de Firebase
                 this.favorites = await getUserFavorites(user.uid);
