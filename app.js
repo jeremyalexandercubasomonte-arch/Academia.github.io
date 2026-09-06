@@ -425,7 +425,7 @@ class App {
     renderHome() {
         // Categorías Destacadas (Círculos Interactivos)
        
-        const homeCats = ["Bebidas", "Snacks", "Helados", "Sopas", "BebidasAlcohol", "Extras", "Golosinas" ];
+        const homeCats = ["camisetas", "poleras", "shord", "conjuntos", "tazas", "banderas", "cazacas", "buzos", "CajaRegalo" ];
         const catsGrid = document.getElementById("home-categories");
         catsGrid.innerHTML = "";
 
